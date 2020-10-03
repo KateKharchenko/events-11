@@ -8,6 +8,10 @@ a, button {
     transition: all .3s ease-in-out;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     font: 400 22px 'Poppins', sans-serif;
     color: #444;
@@ -38,4 +42,69 @@ body {
 
 .box--bg-gradient {
     background-image: linear-gradient(to bottom, #333399 40%, #fe00cc 100%);
+}
+
+h1, h2 {
+    font-size: 62px;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+h4 {
+    font-size: 30px;
+}
+
+h5 {
+    font-size: 24px;
+}
+
+header {
+    color: #fff;
+    background-color: lightcoral;
+}
+
+header a {
+    color: inherit;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 33px;
+}
+
+.logo:hover,
+.logo:focus,
+.logo:active {
+    color: #e71cb4;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+nav ul li a {
+    padding: 5px 0;
+    font-weight: 700;
+    font-size: 16px;
+    border-bottom: 2px solid transparent;
+}
+
+nav ul li a:hover,
+nav ul li a:focus,
+nav ul li a:active {
+    color: #e71cb4;
+    border-color: #e71cb4;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
