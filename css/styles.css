@@ -251,7 +251,7 @@ header .container {
 .person {
     padding: 20px 60px;
     text-align: center;
-    max-width: 33%;
+    width: 33%;
 }
 
 .person--padding-sm {
