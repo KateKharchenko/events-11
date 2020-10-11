@@ -18,6 +18,12 @@ body {
     line-height: 1.6;
 }
 
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+}
+
 .container {
     max-width: 1170px;
     padding: 0 15px;
@@ -63,6 +69,24 @@ h4 {
 
 h5 {
     font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+    h1, h2 {
+        font-size: 42px;
+    }
+    
+    h3 {
+        font-size: 28px;
+    }
+    
+    h4 {
+        font-size: 24px;
+    }
+    
+    h5 {
+        font-size: 18px;
+    }
 }
 
 header {
@@ -156,6 +180,13 @@ header .container {
     padding: 25px 80px;
 }
 
+@media screen and (max-width: 576px) {
+    .btn--lg {
+        font-size: 16px;
+        padding: 15px 45px;
+    }
+}
+
 .btn:hover,
 .btn:focus,
 .btn:active {
@@ -203,6 +234,13 @@ header .container {
     margin: 90px 0;
 }
 
+@media screen and (max-width: 768px) {
+    .text-lg {
+        font-size: 24px;
+        margin: 50px 0;
+    }
+}
+
 .text-sm {
     font-size: 14px;
     margin: 45px 0;
@@ -221,9 +259,21 @@ header .container {
     column-gap: 30px;
 }
 
+@media screen and (max-width: 960px) {
+    .course {
+        column-count: 1;
+    }
+}
+
 .course li {
     display: flex;
     padding: 25px;
+}
+
+@media screen and (max-width: 576px) {
+    .course li {
+        flex-direction: column;
+    }
 }
 
 .course__index {
@@ -233,6 +283,13 @@ header .container {
     padding: 0 25px;
     line-height: 1.2;
     flex: 0 0 auto;
+}
+
+@media screen and (max-width: 576px) {
+    .course__index {
+        font-size: 32px;
+        padding: 0;
+    }
 }
 
 .course__index > i {
@@ -248,10 +305,28 @@ header .container {
     justify-content: space-between;
 }
 
+@media screen and (max-width: 960px) {
+    .people {
+        justify-content: space-around;
+    }
+}
+
 .person {
     padding: 20px 60px;
     text-align: center;
     max-width: 33%;
+}
+
+@media screen and (max-width: 960px) {
+    .person {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .person {
+        width: 80%;
+    }
 }
 
 .person--padding-sm {
@@ -309,6 +384,11 @@ header .container {
     transition: all .3s ease-in;
 }
 
+@media screen and (max-width: 960px) {
+    .countdown__item {
+    }
+}
+
 .countdown__item:hover,
 .countdown__item:focus {
     background-color: transparent;
@@ -327,6 +407,36 @@ header .container {
     font-weight: 300;
     font-size: 18px;
     text-align: center;
+}
+
+@media screen and (max-width: 960px) {
+    .countdown__item {
+        min-width: 120px;
+        min-height: 120px;
+        padding: 1px 20px 10px;
+        margin: 0 20px;
+    }
+    .countdown__num {
+        font-size: 50px;
+    }
+    .countdown__text {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .countdown__item {
+        min-width: 160px;
+        min-height: 160px;
+        padding: 15px 30px 20px;
+        margin: 15px 35px;
+    }
+    .countdown__num {
+        font-size: 70px;
+    }
+    .countdown__text {
+        font-size: 18px;
+    }
 }
 
 .sponsors {
